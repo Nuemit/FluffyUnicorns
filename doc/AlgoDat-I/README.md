@@ -1,0 +1,1 @@
+## Dokumente zu Algorithmen und Datenstrukturen
