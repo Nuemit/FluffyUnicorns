@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\section*{Disjunktive und Konjunktive Normalform}
+Hier ist eine einfache Erklärung der disjunktiven und konjunktiven Normalform, die auch ein Grundschüler verstehen kann, zusammen mit drei Beispielen und einer Schritt-für-Schritt-Anleitung zur Umstellung von einer Form zur anderen.
+\subsection*{Disjunktive Normalform (DNF)}
+Die disjunktive Normalform ist eine Art, logische Ausdrücke zu schreiben. Sie besteht aus einer Reihe von "ODER"-Verknüpfungen (Disjunktionen) von "UND"-Verknüpfungen (Konjunktionen).\\
+\subsection*{Konjunktive Normalform (KNF)}
+Die konjunktive Normalform ist eine andere Art, logische Ausdrücke zu schreiben. Sie besteht aus einer Reihe von "UND"-Verknüpfungen (Konjunktionen) von "ODER"-Verknüpfungen (Disjunktionen).\\
+\subsection*{Beispiele}
+\subsubsection*{Beispiel 1}
+\textbf{Ausgangsformel:}
+\[
+( (A \land B) \lor C )
+\]
+\textbf{Disjunktive Normalform (DNF):}
+Die Formel ist bereits in DNF, da sie eine ODER-Verknüpfung von UND-Verknüpfungen ist.
+\textbf{Konjunktive Normalform (KNF):}
+Um die Formel in KNF umzuwandeln, verwenden wir das Distributivgesetz: 
+\[
+( (A \land B) \lor C = (A \lor C) \land (B \lor C) )
+\]
+\subsubsection*{Beispiel 2}
+\textbf{Ausgangsformel:}
+\[
+( A \lor (B \land C) )
+\]
+\textbf{Disjunktive Normalform (DNF):}
+Die Formel ist bereits in DNF, da sie eine ODER-Verknüpfung von UND-Verknüpfungen ist.
+\textbf{Konjunktive Normalform (KNF):}
+Um die Formel in KNF umzuwandeln, verwenden wir das Distributivgesetz: 
+\[
+( A \lor (B \land C) = (A \lor B) \land (A \lor C) )
+\]
+\subsubsection*{Beispiel 3}
+\textbf{Ausgangsformel:}
+\[
+( (A \lor B) \land C )
+\]
+\textbf{Disjunktive Normalform (DNF):}
+Um die Formel in DNF umzuwandeln, verwenden wir das Distributivgesetz: 
+\[
+( (A \lor B) \land C = (A \land C) \lor (B \land C) )
+\]
+\textbf{Konjunktive Normalform (KNF):}
+Die Formel ist bereits in KNF, da sie eine UND-Verknüpfung von ODER-Verknüpfungen ist.
+\subsection*{Regeln zur Umstellung}
+\subsubsection*{Distributivgesetz:}
+\[
+( A \land (B \lor C) = (A \land B) \lor (A \land C) )
+\]
+\[
+( A \lor (B \land C) = (A \lor B) \land (A \lor C) )
+\]
+\subsubsection*{De Morgan'sche Gesetze:}
+\[
+( \neg (A \land B) = \neg A \lor \neg B )
+\]
+\[
+( \neg (A \lor B) = \neg A \land \neg B )
+\]
+\subsubsection*{Doppelte Negation:}
+\[
+( \neg (\neg A) = A )
+\]
+Diese Regeln helfen dabei, logische Ausdrücke in die gewünschte Normalform zu bringen.
+\end{document}
