@@ -1,0 +1,293 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{enumitem} % Für benutzerdefinierte Aufzählungen
+\usepackage{tcolorbox} % Für farbige Boxen
+\usepackage{xcolor}
+
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,       % Schriftart und -größe
+    keywordstyle=\color{blue},       % Schlüsselwörter (z.B. def, while) in Blau
+    stringstyle=\color{red},         % Strings in Rot
+    commentstyle=\color{gray},       % Kommentare in Grau
+    numberstyle=\tiny\color{gray},   % Zeilennummern
+    numbers=left,                    % Zeilennummern links anzeigen
+    stepnumber=1,                    % Jede Zeile nummerieren
+    showstringspaces=false,          % Leerzeichen in Strings ignorieren
+    frame=single,                    % Rahmen um den Code
+    rulecolor=\color{black},         % Rahmenfarbe
+    backgroundcolor=\color{lightgray!20}, % Hintergrund leicht grau
+    tabsize=4                        % Tab-Breite
+}
+
+
+\title{
+    Klausurvorbereitung \\
+    WiSe-2024 \\
+    Algorithmen \& Datenstrukturen - I \\
+    Aufgabensammlung
+}
+\date{\today}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Aufgabenbereich: Probleme \& Algorithmen}
+\subsection{Beschreibung von Algorithmen}
+\begin{enumerate}
+    \item Ist ein Rezept in einem Kochbuch ein Algorithmus? Begründen Sie Ihre Antwort.
+    \item Welche Vor- und Nachteile hat es, Algorithmen direkt in einer Programmiersprache wie Java zu beschreiben (Statt in einer Umgangssprache oder Pseudocode)?
+    \item Beschreiben Sie umgangssprachlich den Algorithmus zur stellenweisen Addition zweier Dezimalzahlen. Wovon hängt die Laufzeit des Verfahrens wesentlich ab?
+    \item Wie gehen Sie vor, wenn Sie die Summe von n Zahlen berechnen wollen, aber in einem Schritt immer nur zwei Zahlen addieren können? Wieviele Additionen braucht man dafür?
+\end{enumerate}
+\newpage
+\subsection{Verifikation von Algorithmen: Addition (1/2)}
+Gegeben sei folgender Algorithmus zur Addition zweier ganzer Zahlen x und y.
+\begin{align*}
+    x,y \in \mathbb{Z} & & & & & & & & & & & & & & &
+\end{align*}
+Folgender Code (Python) ist gegeben:
+\begin{lstlisting}[language=python]
+def ADD(x,y):
+    s = x
+    i = y
+    while i is not 0:
+        s = s + 1
+        i = i - 1
+    return s
+\end{lstlisting}
+beachten Sie, dass $x,y \in \mathbb{Z}$ auch Negativ sein können.\vspace{2cm}
+\subsection{Verifikation von Algorithmen: Addition (2/2)}
+\begin{enumerate}[label=\alph*)] 
+    \item Für welche Inputs terminiert der Algorithmus, für welche nicht? \\Begründen Sie Ihre Antwort.
+    \item Zeigen Sie, dass der Algorithmus partiell korrekt ist, also das richtige Ergebnis liefert, falls er terminiert. Finden Sie dazu eine Beziehung (Gleichung) zwischen den verwendeten Variablen, die vor Beginn und nach jedem Durchlauf der while-Schleife gilt - eine sogenannte \textbf{Schleifeninvariante}.
+    \item Durch welche Modifikation der while-Anweisung kann man erreichen, dass der Algorithmus immer terminiert? \\Ist er dann noch korrekt?
+    \item Wie verhält sich der Algorithmus, wenn $x$ oder $y$ reelle Zahlen sind?
+\end{enumerate}
+
+\newpage
+\section{Aufgabenbereich: Analyse von Algorithmen}
+\subsection{Binäre Suche}
+Suchen Sie in der Folge $[2,12,25,32,40,43,47,48,50,99]$ nach
+\begin{enumerate}[label=\alph*)]
+    \item x = 32
+    \item x = 49
+\end{enumerate}
+Geben Sie jeweils die Reihenfolge der Elemente an, mit denen x verglichen wird.
+\subsection{Maximum von $n$ Zahlen}
+Die Position des Maximums einer eingegebenen Folge von $n$ Zahlen soll bestimmt werden.
+\begin{enumerate}[label=\alph*)]
+    \item Geben Sie einen einfachen Algorithmus dazu in Pseudocode an.
+    \item Was liefert Ihr Algorithmus, wenn das Maximum mehrfach in der Folge vorkommt?
+    \item Wie viele Vergleiche benötigt Ihr Algorithmus im Best / Worst Case?
+    \item Können Sie einen besseren Algorithmus finden, wenn Sie wissen, dass die eingegebene Folge schon aufsteigend Sortiert ist?
+    \item Lohnt es sich also, eine Folge erst zu sortieren, nur um das Maximum zu bestimmen?
+    \item Fomulieren Sie eine \textbf{Schleifeninvariante} für die zentrale Schleife Ihres Algorithmus aus \textit{\textbf{a)}}.
+\end{enumerate}
+\newpage
+\subsection{Average-Case-Aufwand der Linearen Suche}
+Bestimmen Sie die durchschnittliche Anzahl von Vergleichen fpr die lineare Suche in einer Folge von $n \in \mathbb{N}$ verschiedenen Zahlen.
+\begin{enumerate}[label=\alph*)]
+    \item Für eine erfolgreiche Suche unter der Annahme, dass nach jedem der $n \in \mathbb{N}$ vorhandenen Elemente gleich wahrscheinlich gesucht wird.
+    \item Unter der Annahme, dass die Suchanfrage eine (gleichverteilte) 64-Bit-Ganzzahl ist, und die Folge $n \in \mathbb{N}$ verschiedene solche Zahlen enthält.
+\end{enumerate}
+Was bedeutet das Ergebnis für praktische Anwendungen?
+\section{Aufgabenbereich: Einfache Sortierverfahren}
+\subsection{Sortieren durch Auswahl}
+Die Folge $[21,22,54,17,64,30,94,74,84,90]$ wird mit Selection Sort sortiert. Geben Sie jeweils den Zustand der Folge nach den ersten $4$ vertauschungen an.\vspace{2cm}\\
+\textbf{Beispiel Code: (Python)} % Muss nochmal geprüft werden.
+\begin{lstlisting}[language=python]
+def selection_sort(arr):
+    for i in range(len(arr)):
+        min_idx = i
+        for j in range(i+1, len(arr)):
+            if arr[min_idx] > arr[j]:
+                min_idx = j
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+    return arr
+\end{lstlisting}
+\newpage
+\subsection{Sortieren durch Einfügen}
+Die Folge $[20,13,32,11,88,98,46,24,39,61]$ wird mit Insertion Sort sortiert. Geben Sie für die ersten $11$ Bewegungen (Zuweisungen) jeweils den Zustand der Folge und des Zwischenspeichers $t$ nach der Bewegung in einer Tabelle an.\vspace{0.5em}\\
+Wenn man das folgende verfahren ohne weitere Optimierung verwendet, werden auch Elemente, die ''richtig'' stehen, in den Zwischenspeicher $t$ und zurück bewegt. Zählen Sie solche, eigentlich unnötigen, Bewegungen mit.\vspace{1em}
+\begin{tcolorbox}[colback=blue!5!white, colframe=gray!75!black, boxrule=1mm, rounded corners]
+    \textit{Beschreibung:} In Iteration $i$ fügt man $a_i$ an der richtigen Stelle in die bereits sortierte Teilfolge $a_{0}$,..., $a_{i-1}$ ein:
+    \begin{enumerate}[label=\textcolor{purple}{$\arabic*)$}]
+        \item t = $a_{i}$ zwischenspeichern
+        \item jeden größeren Wert links davon um $1$ Position nach rechts verschieben, um Platz zu schaffen.
+        \item In die entstandene Lücke den Wert $t$ einfügen.
+    \end{enumerate}
+\end{tcolorbox}
+\textbf{Beispiel Code: (Python)}
+\begin{lstlisting}[language=python]
+def insertion_sort(arr):
+    n = len(arr)
+    for i in range(1, n):
+        t = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > t:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = t
+    return arr
+\end{lstlisting}
+\subsection{Laufzeitprognose für Insertion Sort}
+Angenommen, Ihre Implementierung von Insertion Sort braucht zum Sortieren von $n = 100.000$ Elementen $1$ Sekunde. Wie lange würde voraussichtlich das Sortieren von $2n = 200.000$ bzw. von $10n = 1.000.000$ Elementen dauern? \\Begründen Sie Ihre Antwort.
+
+\newpage
+\section{Aufgabenbereich: Mathematische Analyse}
+\subsection{Verdopplung der Eingabegröße}
+\begin{enumerate}[label=\alph*)]
+    \item Wie entwickelt sich vorausssichtlich die Rechenzeit eines Algorithmus mit asymptotischer Laufzeit
+    \begin{itemize}
+        \item $\Theta(n)$
+        \item $\Theta(n^2)$
+        \item $\Theta(n^3)$
+        \item $\Theta(n \log(n))$
+        \item $\Theta(\log(n))$
+    \end{itemize}
+    Wenn die Eingabegröße verdoppelt wird?
+    \item Wie zuverlässig sind solche Prognosen für reale Anwendungen?
+\end{enumerate}
+\subsection{Induktionsbeweis: Summe der ungeraden Zahlen}
+Beweisen Sie durch Induktion:
+\begin{align*}
+    & \sum_{j=1}^{n} (2i-1) = n^2 \text{ für alle } n \in \mathbb{N} : n \geq 1 &
+\end{align*}
+\subsection{Asymptotischer Vergleich von Funktionen}
+Ordnen Sie folgende Funktionen aufsteigend bezüglich der $\mathcal{O}$-Notation:
+\begin{enumerate}[label=$f\arabic*$]
+    \item = $4n \log(n)$
+    \item = $n^n$
+    \item = $1000n^2$
+    \item = $(\sqrt{n})^3$
+    \item = $5 \log(n)$
+    \item = $n^2$
+    \item = $\log(\log(n))$
+    \item = $2^n$
+\end{enumerate}
+Warum ist es dafür egal, zu welcher Basis die Logarithmen gebildet werden?
+
+
+\newpage
+\subsection{Laufzeitprognosen}
+\begin{enumerate}[label=\alph*)]
+    \item Ein Algorithmus mit quadratischer Laufzeit $\Theta(n^2)$ benötige für die Lösung eines Problems mit $n = 2.000.000$ Elementen eine Rechenzeit von $2$ minuten. Untersuchen Sie, wie sich die Rechenzeit voraussichtlich (nährerungs\-weise) ändern wird, wenn sich die Problemgröße verfünffacht.\vspace{1em}\\
+    $Hinweise:$
+    \begin{enumerate}[label=$\arabic*$:]
+        \item $n \rightarrow 5n$
+        \item $n = 2.000.000 \rightarrow 5n = 10.000.000$
+        \item $T(n) = 2min \rightarrow T(?)$
+        \item $\Theta(n^2) \rightarrow \Theta(?)$
+    \end{enumerate}
+\end{enumerate}
+\subsection{Maximale Problemgröße pro Zeit}
+Wenden Sie die Laufzeitprognose umgekehrt an und untersuchen, welche maximale Problemgröße $n$ ein Algorithmus in einer vorgegebenen Zeit bewältigen kann. Angenommen, die Funktionen $f(n)$ in der Tabelle geben für eine Eingabemenge der Größe $n$ die Laufzeit eines Algorithmus in Mikrosekunden an. Berechnen Sie jeweils die größte Problemgröße $n$, die in der angegebenen Zeit gelöst werden kann.
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        $f(n)$ & \textbf{1 Minute} & \textbf{1 Tag} & \textbf{1 Jahr} \\ \hline
+        $\sqrt{n}$ & & & \\ 
+        $n$ & & & \\ 
+        $n \log_2(n)$ & & & \\ 
+        $n^2$ & & & \\ 
+        $2^n$ & & & \\ 
+        $n!$ & & & \\ \hline
+    \end{tabular}
+    \caption{Maximale Problemgrößen für verschiedene Laufzeitfunktionen}
+\end{table}
+\textit{Hinweis:} Runde Sie große Zahlen, wenn nötig.
+\newpage
+\section{Aufgabenbereich:\\Grundlegende Datenstrukturen}
+
+\subsection{Stack Simulation}
+Auf einem Stack von Buchstaben führen sie die folgende Sequenz von Operationen aus:
+\begin{align*}
+    & N S H - A - Q D R - - - E U - - - O T - I - - - &
+\end{align*}
+\textbf{\textit{Ein Buchstabe}} bedeutet dabei eine \textbf{push}-, \textbf{\textit{ein Strich}} bedeutet eine \textbf{pop}- \\\textbf{Operation}.
+\begin{enumerate}[label=\textcolor{purple}{$\alph*)$}]
+    \item Geben Sie die von den pop-Operationen gelieferte Ausgabefolge an.
+    \item Wie ändert sich das Ergebnis, wenn man statt einem Stack eine Queue verwendet?
+\end{enumerate}
+
+\subsection{Stacks: Welche Ausgabe ist möglich?}
+\begin{enumerate}[label=\textcolor{purple}{$\bullet$}]
+    \item Auf einem Stack wird eine gemischte Folge von 10 push- und pop- Operationen ausgeführt.
+    \item Die push- Operationen legen nacheinander die Ziffern 0 bis 9 auf den Stack.
+    \item Die pop- Operationen drucken jewiels die entfernte Ziffer aus.
+    \item Wie sich die push- und pop-Operationen abwechseln, ist nicht bekannt.
+\end{enumerate}
+Welche der folgenden Ausgabefolgen können so prodziert werden? Geben Sie jeweils eine Folge von push- und pop- Operationen an, die zu dieser Ausgabe führt, oder begründen Sie, warum die Ausgabe nicht möglich ist.
+\begin{enumerate}[label=$\arabic*)$]
+    \item 2 1 3 0 4 5 6 7 9 8
+    \item 1 3 0 2 7 9 8 6 5 4
+    \item 0 2 3 4 1 5 6 7 9 8
+    \item 6 5 4 3 2 1 0 7 8 9
+    \item 1 3 0 4 6 5 8 9 7 2
+\end{enumerate}
+
+\newpage
+\subsection{Queues: Welche Ausgabe ist möglich?}
+\begin{enumerate}[label=$\bullet$]
+    \item Auf einer Queue wird eine gemischte Folge von 10 enqueue- und dequeue- Operationen ausgeführt.
+    \item Die enqueue- Operationen fügen nacheinander die Ziffern 0 bis 9 in die Queue ein.
+    \item Die dequeue- Operationen drucken jewils die entfernte Ziffer aus.
+    \item Wie sich die enqueue- und dequeue- Operationen abwechseln, ist nicht bekannt.
+\end{enumerate}
+Welche der folgenden Ausgabefolgen können so prodziert werden? Geben Sie jeweils eine Folge von enqueue- und dequeue- Operationen an, die zu dieser Ausgabe führt, oder begründen Sie, warum die Ausgabe nicht möglich ist.
+\begin{enumerate}[label=$\arabic*)$]
+    \item 2 1 3 0 4 5 6 7 9 8
+    \item 1 3 0 2 7 9 8 6 5 4
+    \item 0 2 3 4 1 5 6 7 9 8
+    \item 6 5 4 3 2 1 0 7 8 9
+    \item 1 3 0 4 6 5 8 9 7 2
+\end{enumerate}
+
+\section{Aufgabenbereich: Rekursion}
+\subsection{Rekursive Implementierung der binären Suche}
+Implementieren Sie die binäre Suche rekursiv in Pseudocode:
+\begin{itemize}
+    \item binaere\_suche($a$, $unten$, $oben$, $x$) sucht in folge $a$ zwischen Index $unten$ und Index $oben$ (beide inklusive) nach dem wert $x$.
+    \item Wie sieht der $oberste$ Aufruf für die Suche in der gnazen Folge aus?
+    \item Was ist die Abbruchbedingung?\\
+    (Tipp: betrachten Sie den Fall, dass das gesuchte Element nicht gefunden wird)
+    \item Stellen Sie sicher, dass das Ergebnis für "nicht gefunden" \\unmissverständlich ist.
+\end{itemize}
+\newpage   
+\subsection{Analyse einer rekursiven Funktion}
+Gegeben sei folgende rekursive Funktion für $n \in \mathbb{N}$:
+\[
+\begin{aligned}
+    F: \mathbb{N} \rightarrow \mathbb{N} 
+    & & & & & & & & &
+    F(n) = \begin{cases}
+            0 & (n \leq 1) \\
+            F(n-2)+1 & (n > 1)
+    \end{cases}
+\end{aligned}
+\]
+\begin{enumerate}[label=$\alph*)$]
+    \item Berechnen Sie $F(n)$ für einige kleine $n \in \mathbb{N}$.
+    \item Welche Mathematische Funktion wird von $F$ berechnet?
+    \item Für die Laufzeitanalyse der Funktion $F(n)$ zählen wir jetzt die Anzahl der Additionen und Subtraktionen, $T(n)$. Stellen Sie eine Rekusionsgleichung für $T(n)$ auf.
+    \item Geben Sie eine geschlossene Formel für $T(n)$ an.
+\end{enumerate}
+\subsection{Auf und Ab}
+Schreiben Sie eine rekursive Funktion $aufundab(unten, oben)$, die von der ganzen Zahl $unten$ zur ganzen Zahl $oben$ hoch- und wieder herunter- zählt. Sie dürfen nur Rekursion verwenden, keine Schleifen.
+\begin{itemize}
+    \item[-] Beispiele:
+    \begin{enumerate}[label=$\alph*)$]
+        \item $aufundab(2,5)$ gibt 2 3 4 5 4 3 2 aus.
+        \item $aufundab(3,3)$ gibt 3 2 1 2 3 aus.
+    \end{enumerate}
+    \item[] Tipp: Suchen Sie im Ergebnis von $aufundab(2,5)$ nach einer ''etwas kleineren'' Teilfolge, die sich durch einen rekursiven Aufruf von $aufundab$ erzeugen lässt. Was muss man tun, um aus dieser Teilfolge die gesamte Folge zu erzeugen? Wann bricht die Rekursion ab?
+\end{itemize}
+
+\end{document}
