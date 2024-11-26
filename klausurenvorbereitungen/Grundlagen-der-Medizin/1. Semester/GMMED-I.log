@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  26 NOV 2024 09:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  26 NOV 2024 09:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -428,42 +428,42 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 41.
  [2{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3] [4] [5] [6]
-Overfull \hbox (2.63947pt too wide) in paragraph at lines 209--211
+Overfull \hbox (2.63947pt too wide) in paragraph at lines 182--184
 \OT1/cmr/m/n/10 Zellen, die den di-rek-ten Aus-tausch kleiner Molek^^?ule und Io-nen erm^^?oglichen.
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 241--244
+Underfull \hbox (badness 10000) in paragraph at lines 214--217
 
  []
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 282--288
+Underfull \hbox (badness 10000) in paragraph at lines 255--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--288
+Underfull \hbox (badness 10000) in paragraph at lines 255--261
 
  []
 
 
-Overfull \hbox (4.04837pt too wide) in paragraph at lines 293--294
+Overfull \hbox (4.04837pt too wide) in paragraph at lines 266--267
 []\OT1/cmr/bx/n/10 funktionelle Ein-teilung: \OT1/cmr/m/n/10 Man un-ter-schei-det auf-grund der Art und Weise,
  []
 
 
-Overfull \hbox (5.02907pt too wide) in paragraph at lines 295--296
+Overfull \hbox (5.02907pt too wide) in paragraph at lines 268--269
 []\OT1/cmr/bx/n/10 merokrine Dr^^?usen: \OT1/cmr/m/n/10 Sekret wird durch Vesikel nach au^^Yen abgegeben
  []
 
 
-Overfull \hbox (24.02832pt too wide) in paragraph at lines 295--296
+Overfull \hbox (24.02832pt too wide) in paragraph at lines 268--269
 \OT1/cmr/m/n/10 ohne dabei Zellbe-standteile zu ver-lieren, Bsp.: Spe-icheldr^^?use, Schwei^^Ydr^^?use 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 322--337
+Underfull \hbox (badness 10000) in paragraph at lines 295--310
 
  []
 
