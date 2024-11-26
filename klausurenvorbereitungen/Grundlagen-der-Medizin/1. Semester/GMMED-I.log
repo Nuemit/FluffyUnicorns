@@ -1,0 +1,494 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  26 NOV 2024 09:01
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Users/nuemit/UNIVERSITY_APPLICATION/klausurenvorbereitungen/Grundlagen-der-Medizin/1. Semester/GMMED-I.tex"
+(/Users/nuemit/UNIVERSITY_APPLICATION/klausurenvorbereitungen/Grundlagen-der-Medizin/1. Semester/GMMED-I.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen141
+\ar@mcellbox=\box51
+\extrarowheight=\dimen142
+\NC@list=\toks19
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box52
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box53
+\UL@hyphenbox=\box54
+\UL@skip=\skip52
+\UL@hook=\toks21
+\UL@height=\dimen145
+\UL@pe=\count196
+\UL@pixel=\dimen146
+\ULC@box=\box55
+Package: ulem 2019/11/18
+\ULdepth=\dimen147
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count197
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count198
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count199
+\c@listtotal=\count266
+\c@listcount=\count267
+\c@liststart=\count268
+\c@liststop=\count269
+\c@citecount=\count270
+\c@citetotal=\count271
+\c@multicitecount=\count272
+\c@multicitetotal=\count273
+\c@instcount=\count274
+\c@maxnames=\count275
+\c@minnames=\count276
+\c@maxitems=\count277
+\c@minitems=\count278
+\c@citecounter=\count279
+\c@maxcitecounter=\count280
+\c@savedcitecounter=\count281
+\c@uniquelist=\count282
+\c@uniquename=\count283
+\c@refsection=\count284
+\c@refsegment=\count285
+\c@maxextratitle=\count286
+\c@maxextratitleyear=\count287
+\c@maxextraname=\count288
+\c@maxextradate=\count289
+\c@maxextraalpha=\count290
+\c@abbrvpenalty=\count291
+\c@highnamepenalty=\count292
+\c@lownamepenalty=\count293
+\c@maxparens=\count294
+\c@parenlevel=\count295
+\blx@tempcnta=\count296
+\blx@tempcntb=\count297
+\blx@tempcntc=\count298
+\c@blx@maxsection=\count299
+\blx@maxsegment@0=\count300
+\blx@notetype=\count301
+\blx@parenlevel@text=\count302
+\blx@parenlevel@foot=\count303
+\blx@sectionciteorder@0=\count304
+\blx@sectionciteorderinternal@0=\count305
+\blx@entrysetcounter=\count306
+\blx@biblioinstance=\count307
+\labelnumberwidth=\skip53
+\labelalphawidth=\skip54
+\biblabelsep=\skip55
+\bibitemsep=\skip56
+\bibnamesep=\skip57
+\bibinitsep=\skip58
+\bibparsep=\skip59
+\bibhang=\skip60
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language89
+\c@mincomprange=\count308
+\c@maxcomprange=\count309
+\c@mincompwidth=\count310
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'apa.dbx' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex-apa/apa.dbx
+File: apa.dbx 2023/03/20 v9.17 APA biblatex style data model
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count311
+\c@savedafterword=\count312
+\c@annotator=\count313
+\c@savedannotator=\count314
+\c@author=\count315
+\c@savedauthor=\count316
+\c@bookauthor=\count317
+\c@savedbookauthor=\count318
+\c@commentator=\count319
+\c@savedcommentator=\count320
+\c@editor=\count321
+\c@savededitor=\count322
+\c@editora=\count323
+\c@savededitora=\count324
+\c@editorb=\count325
+\c@savededitorb=\count326
+\c@editorc=\count327
+\c@savededitorc=\count328
+\c@foreword=\count329
+\c@savedforeword=\count330
+\c@holder=\count331
+\c@savedholder=\count332
+\c@introduction=\count333
+\c@savedintroduction=\count334
+\c@namea=\count335
+\c@savednamea=\count336
+\c@nameb=\count337
+\c@savednameb=\count338
+\c@namec=\count339
+\c@savednamec=\count340
+\c@translator=\count341
+\c@savedtranslator=\count342
+\c@shortauthor=\count343
+\c@savedshortauthor=\count344
+\c@shorteditor=\count345
+\c@savedshorteditor=\count346
+\c@narrator=\count347
+\c@savednarrator=\count348
+\c@execproducer=\count349
+\c@savedexecproducer=\count350
+\c@execdirector=\count351
+\c@savedexecdirector=\count352
+\c@with=\count353
+\c@savedwith=\count354
+\c@labelname=\count355
+\c@savedlabelname=\count356
+\c@institution=\count357
+\c@savedinstitution=\count358
+\c@lista=\count359
+\c@savedlista=\count360
+\c@listb=\count361
+\c@savedlistb=\count362
+\c@listc=\count363
+\c@savedlistc=\count364
+\c@listd=\count365
+\c@savedlistd=\count366
+\c@liste=\count367
+\c@savedliste=\count368
+\c@listf=\count369
+\c@savedlistf=\count370
+\c@location=\count371
+\c@savedlocation=\count372
+\c@organization=\count373
+\c@savedorganization=\count374
+\c@origlocation=\count375
+\c@savedoriglocation=\count376
+\c@origpublisher=\count377
+\c@savedorigpublisher=\count378
+\c@publisher=\count379
+\c@savedpublisher=\count380
+\c@language=\count381
+\c@savedlanguage=\count382
+\c@origlanguage=\count383
+\c@savedoriglanguage=\count384
+\c@citation=\count385
+\c@savedcitation=\count386
+\c@pageref=\count387
+\c@savedpageref=\count388
+\shorthandwidth=\skip61
+\shortjournalwidth=\skip62
+\shortserieswidth=\skip63
+\shorttitlewidth=\skip64
+\shortauthorwidth=\skip65
+\shorteditorwidth=\skip66
+\locallabelnumberwidth=\skip67
+\locallabelalphawidth=\skip68
+\localshorthandwidth=\skip69
+\localshortjournalwidth=\skip70
+\localshortserieswidth=\skip71
+\localshorttitlewidth=\skip72
+\localshortauthorwidth=\skip73
+\localshorteditorwidth=\skip74
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count389
+\c@textcitetotal=\count390
+\c@textcitemaxnames=\count391
+\c@biburlbigbreakpenalty=\count392
+\c@biburlbreakpenalty=\count393
+\c@biburlnumpenalty=\count394
+\c@biburlucpenalty=\count395
+\c@biburllcpenalty=\count396
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count397
+)
+Package biblatex Info: Trying to load bibliography style 'apa'...
+Package biblatex Info: ... file 'apa.bbx' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex-apa/apa.bbx
+File: apa.bbx 2023/03/20 v9.17 APA biblatex references style
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count398
+\c@bbx:relatedtotal=\count399
+)
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defined, overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'biblist' already defined, overwriting.
+Package biblatex Info: Delimiter 'nonameyeardelim' in context 'bib' already defined, overwriting.
+Package biblatex Info: Delimiter 'nonameyeardelim' in context 'biblist' already defined, overwriting.
+)
+Package biblatex Info: Trying to load citation style 'apa'...
+Package biblatex Info: ... file 'apa.cbx' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex-apa/apa.cbx
+File: apa.cbx 2023/03/20 v9.17 APA biblatex citation style
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
+Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined, overwriting.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\citeauthor'.
+Package biblatex Info: Redefining '\citeyear'.
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\smartcites'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-02-20 L3 programming layer (loader) 
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count400
+\l__pdf_internal_box=\box56
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2024-02-20 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-02-18 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+))
+\@quotelevel=\count401
+\@quotereset=\count402
+ (./GMMED-I.aux)
+\openout1 = `GMMED-I.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count403
+\scratchdimen=\dimen148
+\scratchbox=\box57
+\nofMPsegments=\count404
+\nofMParguments=\count405
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count406
+\MPscratchDim=\dimen149
+\MPnumerator=\count407
+\makeMPintoPDFobject=\count408
+\everyMPtoPDFconversion=\toks23
+) (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
+Package biblatex Info: ... file 'english-apa.lbx' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
+File: english-apa.lbx 2023/03/20 v9.17 APA biblatex localisation
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'american' -> 'american-apa'...
+Package biblatex Info: ... file 'american-apa.lbx' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
+File: american-apa.lbx 2023/03/20 v9.17 APA biblatex localisation
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+))))
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `GMMED-I.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'GMMED-I.bbl' found.
+ (./GMMED-I.bbl)
+Package biblatex Info: Reference section=0 on input line 23.
+Package biblatex Info: Reference segment=0 on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 24.
+ [1
+
+{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 41.
+ [2{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3] [4] [5] [6]
+Overfull \hbox (2.63947pt too wide) in paragraph at lines 209--211
+\OT1/cmr/m/n/10 Zellen, die den di-rek-ten Aus-tausch kleiner Molek^^?ule und Io-nen erm^^?oglichen.
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+
+ []
+
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 282--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--288
+
+ []
+
+
+Overfull \hbox (4.04837pt too wide) in paragraph at lines 293--294
+[]\OT1/cmr/bx/n/10 funktionelle Ein-teilung: \OT1/cmr/m/n/10 Man un-ter-schei-det auf-grund der Art und Weise,
+ []
+
+
+Overfull \hbox (5.02907pt too wide) in paragraph at lines 295--296
+[]\OT1/cmr/bx/n/10 merokrine Dr^^?usen: \OT1/cmr/m/n/10 Sekret wird durch Vesikel nach au^^Yen abgegeben
+ []
+
+
+Overfull \hbox (24.02832pt too wide) in paragraph at lines 295--296
+\OT1/cmr/m/n/10 ohne dabei Zellbe-standteile zu ver-lieren, Bsp.: Spe-icheldr^^?use, Schwei^^Ydr^^?use 
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 322--337
+
+ []
+
+[11] [12] (./GMMED-I.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+Package logreq Info: Writing requests to 'GMMED-I.run.xml'.
+\openout1 = `GMMED-I.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 10396 strings out of 474116
+ 203982 string characters out of 5732612
+ 1935187 words of memory out of 5000000
+ 32672 multiletter control sequences out of 15000+600000
+ 563470 words of font info for 54 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 66i,11n,81p,778b,5052s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on GMMED-I.pdf (12 pages, 153081 bytes).
+PDF statistics:
+ 94 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
