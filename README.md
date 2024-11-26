@@ -2,7 +2,7 @@
 
 ## Projektbeschreibung
 
-Dieses Projekt stellt Unterlagen für Medizininformatiker bereit. Es umfasst Lernkarten, PDFs und andere nützliche Materialien, um das Studium zu unterstützen.
+Dieses Projekt stellt Unterlagen für Medizininformatiker & Informatiker bereit. Es umfasst Lernkarten, PDFs und andere nützliche Materialien, um das Studium zu unterstützen.
 
 ## Inhalt
 
