@@ -34,3 +34,9 @@
 # Technische Informatik
 
 * [esp32 Simulator (Arduino)](https://wokwi.com/)
+
+
+# OFF TOPIC (but not off topic!)
+
+* [Better Power Shell Lookings!](https://ohmyposh.dev/)
+* [Better Shell Lookings!](https://github.com/ohmyzsh/ohmyzsh)
