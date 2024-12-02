@@ -1,8 +1,16 @@
 # Allgemeines
 
+* [Tower of Hanoi (Mathe)](https://www.mathsisfun.com/games/towerofhanoi.html)
 * [LaTeX Installation](https://www.latex-project.org/get/)
 * [LaTeX Online Editor (Overleaf)](https://de.overleaf.com/)
 * [LaTeX Tutorial](https://latex.hpfsc.de/content/latex_tutorial/)
+* [coggle - MindMaps](https://coggle.it/)
+* [SimpleShow (Erklärvideos für Präsentationen)](https://simpleshow.com/de/)
+* [MentiMeter (Quiz erstellung)](https://www.mentimeter.com/)
+* [Microsoft Education (kostenlos für Studenten)](https://www.microsoft.com/de-de/education/products/office)
+* [Prezi (Präsentations erstellungs Tool)](https://prezi.com/)
+* [Canva](https://www.canva.com/de_de/)
+
 
 # Medizin
 
