@@ -25,6 +25,7 @@
 * [Med - Anatomy Pictures](https://smart.servier.com/)
 * [Peer reviewed Surgeries](https://csurgeries.com/)
 * [Publikation Medizinischer Leitlinien](https://www.awmf.org/leitlinien)
+* [Neurokit (Pyhton library)](https://github.com/neuropsychology/NeuroKit#quick-example)
 
 
 # Informatik
