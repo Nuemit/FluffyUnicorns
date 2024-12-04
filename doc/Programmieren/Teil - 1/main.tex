@@ -7,6 +7,7 @@
 \usepackage{ngerman}
 \usepackage{listings}
 \usepackage{tcolorbox} % Für farbige Boxen
+\usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage{courier}
@@ -44,7 +45,7 @@
     numbers=left,
     stepnumber=1,
     showstringspaces=false,
-    frame=single,
+    frame=double,
     rulecolor=\color{white},
     backgroundcolor=\color[HTML]{1e211f},
     tabsize=4,
@@ -62,8 +63,26 @@
 }
 \date{\today}
 
+\newpage
 \begin{document}
 \maketitle
+\begin{titlepage}
+    \vspace*{\fill}
+    \begin{center}
+        \Huge
+        \textbf{Vorwort}
+    \end{center}
+    \vspace{1cm}
+    \begin{center}
+        \large
+        Dieses Dokument, soll zur Hilfestellung in dem Modul ''Programmieren-1'' dienen. \\
+        \vspace{1cm}
+        In Programmieren-1, benutzen wir Java mit der OpenJDK-23. \\
+        \vspace{1cm}
+        Dieses Dokument, ist in Kapitel unterteilt, die sich mit den Grundlagen von Java beschäftigen. 
+    \end{center}
+    \vspace*{\fill}
+\end{titlepage}
 \newpage
 \tableofcontents
 \newpage
@@ -122,16 +141,90 @@ Ein Literal, ist einfach ein Wert der einem Datentypen zugeordnet ist. Zum Beisp
 \begin{enumerate}[label=]
     \item \textbf{25} ist ein Literal vom Datentyp \textbf{int} o. \textbf{long} o. \textbf{short} o. \textbf{byte}
 \end{enumerate}
-\subsection*{Wie werden welche Variablen deklariert \& initialisiert?}
-\addcontentsline{toc}{subsection}{Wie werden welche Variablen deklariert \& initialisiert?}
+\subsection*{Wie werden Variablen deklariert \& initialisiert?}
+\addcontentsline{toc}{subsection}{Wie werden Variablen deklariert \& initialisiert?}
 % % % Unterkapitel 4 % % %
 Eine Deklaration der Variable, legt einen Speicherplatz für die Variable fest. Eine Initialisierung, weist der Variable einen Wert zu. \\
 Man kann eine Variable innerhalb eines schrittes deklarieren und initialisieren.
 \begin{lstlisting}[language=java,title=Beispiele]
+.
     int a;      // Deklaration
     a = 5;      // Initialisierung
 
     int b = 10; // Deklaration und Initialisierung    
+.
 \end{lstlisting}
+\subsection*{Konstanten}
+Konstanten sind Variablen, die nach Ihrer Initialisierung nicht mehr verändert werden können. \\
+Zu Konstanten sind wesentliche dinge zu beachten:
+\begin{enumerate}[label=$\alph*)$]
+    \item Der Name einer Konstante wird in Großbuchstaben geschrieben.
+    \item Der Wert einer Konstante wird mit dem Schlüsselwort \textbf{final} deklariert.
+    \item Der Wert einer Konstante wird bei der Deklaration initialisiert.
+    \item Der Wert einer Konstante kann nicht mehr verändert werden.
+    \item Der Wert einer Konstante kann nur einmal initialisiert werden.
+\end{enumerate}
+\begin{lstlisting}[language=java,title=Beispiel]
+.
+    final int MAX = 100; // Konstante Variable
+.
+\end{lstlisting}
+\newpage
+\subsection*{Initialisierung von Klassen}
+\addcontentsline{toc}{subsection}{Initialisierung von Klassen}
+% % % Unterkapitel 5 % % %
+Wenn wir Klassen benutzen wollen, müssen wir folgendes Beachten:
+\begin{itemize}
+    \item Ist die Klasse in der Standardbibliothek enthalten?
+    \item Hab Ich das Paket indem die Klasse enthalten ist, installiert?
+    \item Muss Ich die Klasse importieren?
+\end{itemize}
+Aufgrund dessen, das wir nur mit Klassen Arbeiten, die Standardmäßig enthalten sind, wird hier nur auf Standardbibliotheken und Importe eingegangen.
+\subsubsection*{Standardbibliotheken}
+\addcontentsline{toc}{subsubsection}{Standardbibliothek}
+\textbf{Java} bietet eine Vielzahl von Standardbibliotheken an, die wir benutzen können. \\
+Einige Beispiele sind:
+\begin{enumerate}[label=-]
+    \item \textbf{java.util} - Für die Eingabe von Daten
+    \item \textbf{java.io} - Für die Ausgabe von Daten
+    \item \textbf{java.awt} - Für die Erstellung von GUIs
+\end{enumerate}
+Die Standardbibliotheken sind zu finden unter \href{https://docs.oracle.com/en/java/javase/23/docs/api/index.html}{Standardbibliotheken-Java-23}
+\subsubsection*{Importierung von Klassen}
+\addcontentsline{toc}{subsubsection}{Importierung von Klassen}
+\begin{lstlisting}[language=java,title=Beispiel mit der Scanner Klasse]
+import java.util.Scanner; // Importieren der Scanner Klasse
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Initialisierung der Scanner Klasse
+        //              mit System.in als Parameter
+        Scanner scIn = new Scanner(System.in); 
+    
+    }
+}
+\end{lstlisting}
+Wir initialisieren die Variable \textbf{scIn} mit der Klasse Scanner als \textbf{komplexen} Datentyp.
+\newpage
+\section*{Operatoren}
+\addcontentsline{toc}{section}{Operatoren}
+% % % Operatoren Kapitel % % %
+\subsection*{Was sind Operatoren?}
+\addcontentsline{toc}{subsection}{Was sind Operatoren?}
+Operatoren sind Symbole, die auf Variablen und Werte angewendet werden, um eine Operation durchzuführen.
+\subsection*{Welche Arten von Operatoren gibt es?}
+\addcontentsline{toc}{subsection}{Welche Arten von Operatoren gibt es?}
+% % % Unterkapitel 1 % % %
+\textbf{\color[HTML]{a61e27}DISCLAIMER:} \\
+\textit{\color[HTML]{a61e27}Die Operatoren, die aufgezählt werden, sind die Operatoren, die wir auch in dem Modul ''Programmieren-1'' benutzen.}
+\begin{enumerate}[label=-]
+    \item \textbf{Vergleichsoperatoren}
+    \item \textbf{Logische Operatoren}
+    \item \textbf{Bitweise Operatoren}
+    \item \textbf{Zuweisungsoperatoren}
+    \item \textbf{Inkrement- \& Dekrementoperatoren}
+\end{enumerate}
 
 \end{document}
