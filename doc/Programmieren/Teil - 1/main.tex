@@ -1,0 +1,124 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[a4paper, left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage{listings}
+\usepackage{tcolorbox} % Für farbige Boxen
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{courier}
+
+\pagenumbering{Roman}
+\setcounter{page}{0}
+
+\onehalfspacing % 1.5-facher Zeilenabstand
+
+% Code-Block-Einstellungen
+
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,       % Schriftart und -größe
+    keywordstyle=\color{blue},       % Schlüsselwörter (z.B. def, while) in Blau
+    stringstyle=\color{purple},      
+    commentstyle=\color{gray},       % Kommentare in Grau
+    numberstyle=\tiny\color{gray},   % Zeilennummern
+    numbers=left,                    % Zeilennummern links anzeigen
+    stepnumber=1,                    % Jede Zeile nummerieren
+    showstringspaces=false,          % Leerzeichen in Strings ignorieren
+    frame=single,                    % Rahmen um den Code
+    rulecolor=\color{black},         % Rahmenfarbe
+    backgroundcolor=\color{lightgray!20}, % Hintergrund leicht grau
+    tabsize=4                        % Tab-Breite
+}
+
+\lstset{
+    language=Java,
+    basicstyle=\ttfamily\small\color{white}, % Schriftart, -größe und Farbekeywordstyle=\color{cyan},
+    stringstyle=\color[HTML]{ffb10a},
+    commentstyle=\color[HTML]{2cc227},
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color[HTML]{55abed},
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    frame=single,
+    rulecolor=\color{white},
+    backgroundcolor=\color[HTML]{1e211f},
+    tabsize=4,
+    morekeywords={@Override, public, private, protected, static, final, class, interface, extends, implements, new, return, if, else, for, while, do, switch, case, break, continue, default, try, catch, finally, throw, throws, import, package, this, super, void, int, long, double, float, boolean, char, byte, short, null, true, false}
+}
+
+% Titel
+\title{
+    $Programmieren$\\
+    Teil - $1$
+    }
+\author{
+    {Tim Nätebus} \\
+    {$Git: FluffyUnicorns$}
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section*{Variablen}
+\addcontentsline{toc}{section}{Variablen}
+% % % Variablen Kapitel % % %
+\subsection*{Was Genau sind Variablen?}
+\addcontentsline{toc}{subsection}{Was Genau sind Variablen?}
+% % % Unterkapitel 1 % % %
+\subsection*{Welche Datentypen gibt es in Java?}
+\addcontentsline{toc}{subsection}{Welche Datentypen gibt es in Java?}
+% % % Unterkapitel 2 % % %
+Es gibt folgende Datentypen in \textbf{Java}:
+\begin{enumerate}[label=-]
+    \item \textbf{Primitive Datentypen}
+    \item \textbf{Komplexe Datentypen}
+\end{enumerate}
+\subsubsection*{Primitive Datentypen}
+\addcontentsline{toc}{subsubsection}{Primitive Datentypen}
+\begin{table}[h!]
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|c|l|}
+        \hline
+        \textbf{Datentyp} & \textbf{Größe}  & \textbf{Kann darstellen}  \\ \hline
+        \textbf{byte}     & \texttt{8 Bit}  & \texttt{Ganze Zahlen}  	\\ \hline
+        \textbf{short}    & \texttt{16 Bit} & \texttt{Ganze Zahlen}  	\\ \hline
+        \textbf{int}      & \texttt{32 Bit} & \texttt{Ganze Zahlen}  	\\ \hline
+        \textbf{long}     & \texttt{64 Bit} & \texttt{Ganze Zahlen}  	\\ \hline
+        \textbf{float}    & \texttt{32 Bit} & \texttt{Kommazahlen}      \\ \hline
+        \textbf{double}   & \texttt{64 Bit} & \texttt{Kommazahlen}      \\ \hline
+        \textbf{char}     & \texttt{16 Bit} & \texttt{Zeichen}          \\ \hline
+        \textbf{boolean}  & \texttt{1 Bit}  & \texttt{Wahr \& Falsch}   \\ \hline
+        \textbf{void}     & \texttt{-}      & \texttt{Kein Wert}        \\ \hline
+    \end{tabular}
+    }
+\end{table}
+\subsubsection*{Komplexe Datentypen}
+\addcontentsline{toc}{subsubsection}{Komplexe Datentypen}
+\begin{enumerate}[label=]
+    \item \textbf{String} - Zeichenkette
+    \item \textbf{Array} - Liste von Elementen
+    \item \textbf{Klasse} - Eigene Datentypen
+\end{enumerate}
+Abriss zu den Wichtigsten Variablen:
+\begin{enumerate}[label=]
+    \item 
+\end{enumerate}
+\subsection*{Was ist ein Literal?}
+\addcontentsline{toc}{subsection}{Was ist ein Literal?}
+% % % Unterkapitel 3 % % %
+\subsection*{Wie werden welche Variablen deklariert \& initialisiert?}
+\addcontentsline{toc}{subsection}{Wie werden welche Variablen deklariert \& initialisiert?}
+% % % Unterkapitel 4 % % %
+\begin{lstlisting}[language=java,title=Beispiele]
+    int a = 5;    
+\end{lstlisting}
+
+\end{document}
