@@ -1,0 +1,374 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[a4paper, left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage{listings}
+\usepackage{tcolorbox} % Fuer farbige Boxen
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{courier}
+
+\pagenumbering{Roman}
+\setcounter{page}{0}
+
+\onehalfspacing % 1.5-facher Zeilenabstand
+
+% Code-Block-Einstellungen
+
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,       % Schriftart und -groeße
+    keywordstyle=\color{blue},       % Schluesselwoerter (z.B. def, while) in Blau
+    stringstyle=\color{purple},      
+    commentstyle=\color{gray},       % Kommentare in Grau
+    numberstyle=\tiny\color{gray},   % Zeilennummern
+    numbers=left,                    % Zeilennummern links anzeigen
+    stepnumber=1,                    % Jede Zeile nummerieren
+    showstringspaces=false,          % Leerzeichen in Strings ignorieren
+    frame=single,                    % Rahmen um den Code
+    rulecolor=\color{black},         % Rahmenfarbe
+    backgroundcolor=\color{lightgray!20}, % Hintergrund leicht grau
+    tabsize=4                        % Tab-Breite
+}
+
+\lstset{
+    language=Java,
+    basicstyle=\ttfamily\small,             % Schriftart und -größe ohne Farbänderung
+    keywordstyle=\color{black}\bfseries,   % Schlüsselwörter in schwarz und fett
+    stringstyle=\color{black},             % Strings in schwarz
+    commentstyle=\color[gray]{0.5},        % Kommentare in Grau (weniger gesättigt)
+    numberstyle=\tiny\color[gray]{0.5},    % Zeilennummern in Grau
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    frame=single,                          % Einfacher Rahmen um den Code
+    rulecolor=\color{black},               % Rahmen in schwarz
+    backgroundcolor=\color{white},         % Weißer Hintergrund
+    tabsize=4,
+    morekeywords={@Override, public, private, protected, static, final, class, interface, extends, implements, new, return, if, else, for, while, do, switch, case, break, continue, default, try, catch, finally, throw, throws, import, package, this, super, void, int, long, double, float, boolean, char, byte, short, null, true, false}
+}
+
+
+% Titel
+\title{
+    $Programmieren$\\
+    Teil - $1$
+    }
+\author{
+    {Tim Naetebus} \\
+    {$Git: FluffyUnicorns$}
+}
+\date{\today}
+
+\newpage
+\begin{document}
+\subsection*{Welche Datentypen gibt es in Java?}
+\addcontentsline{toc}{subsection}{Welche Datentypen gibt es in Java?}
+% % % Unterkapitel 2 % % %
+Es gibt folgende Datentypen in \textbf{Java}:
+\begin{enumerate}[label=-]
+    \item \textbf{Primitive Datentypen}
+    \item \textbf{Komplexe Datentypen}
+\end{enumerate}
+\subsubsection*{Primitive Datentypen}
+\addcontentsline{toc}{subsubsection}{Primitive Datentypen}
+\begin{table}[h!]
+    \resizebox{0.8\textwidth}{!}{%
+    \begin{tabular}{|l|c|l|}
+        \hline
+        \textbf{Datentyp} & \textbf{Groeße}  & \textbf{Kann darstellen}  \\ \hline
+        \textbf{byte}     & \texttt{8 Bit}  & \texttt{Ganze Zahlen}  	\\ \hline
+        \textbf{short}    & \texttt{16 Bit} & \texttt{Ganze Zahlen}  	\\ \hline
+        \textbf{int}      & \texttt{32 Bit} & \texttt{Ganze Zahlen}  	\\ \hline
+        \textbf{long}     & \texttt{64 Bit} & \texttt{Ganze Zahlen}  	\\ \hline
+        \textbf{float}    & \texttt{32 Bit} & \texttt{Kommazahlen}      \\ \hline
+        \textbf{double}   & \texttt{64 Bit} & \texttt{Kommazahlen}      \\ \hline
+        \textbf{char}     & \texttt{16 Bit} & \texttt{Zeichen}          \\ \hline
+        \textbf{boolean}  & \texttt{1 Bit}  & \texttt{Wahr \& Falsch}   \\ \hline
+        \textbf{void}     & \texttt{-}      & \texttt{Kein Wert}        \\ \hline
+    \end{tabular}
+    }
+\end{table}
+\subsubsection*{Komplexe Datentypen}
+\addcontentsline{toc}{subsubsection}{Komplexe Datentypen}
+\begin{table}[h!]
+    \resizebox{0.8\textwidth}{!}{%
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Datentyp} & \textbf{Beschreibung}  \\ \hline
+        \textbf{String}   & \texttt{Zeichenkette}   \\ \hline
+        \textbf{Array}    & \texttt{Liste von Elementen} \\ \hline
+        \textbf{Klasse}   & \texttt{Eigene Datentypen} \\ \hline
+    \end{tabular}
+    }
+\end{table}
+\begin{lstlisting}[language=java,title=Beispiele]
+        int a;      // Deklaration
+        a = 5;      // Initialisierung
+    
+        int b = 10; // Deklaration und Initialisierung    
+\end{lstlisting}
+\newpage
+\section*{Klassen und Methoden}
+\addcontentsline{toc}{section}{Klassen und Methoden}
+% % % Unterkapitel 1 % % %
+\subsection*{Was ist eine Klasse?}
+\addcontentsline{toc}{subsection}{Was ist eine Klasse?}
+Eine Klasse ist ein Bauplan fuer Objekte. Sie definiert die Eigenschaften und \\Methoden, die ein Objekt haben soll.
+\subsection*{Klassen und Methoden}
+\addcontentsline{toc}{subsection}{Methoden}
+Eine Methode ist ein Codeblock, der eine bestimmte Aufgabe erfuellt.\\
+Die Methode kann immer wieder neu Aufgerufen werden. \vspace{0.5cm} \\
+\textbf{Beispiel:}
+\begin{lstlisting}[language=java,title=Hello.java]
+// Klassenname = Hello
+// Dateiname = Hello.java
+
+// Zugriffsklasse = public (Zugriff von ueberall)
+public class Hello {
+
+    // Main-Methode
+    // Zugriffsklasse   = public (Zugriff von ueberall)
+    // Statisch         = Methode gehoert zur Klasse
+    // Rueckgabetyp     = void (kein Rueckgabewert)
+    // Name             = main
+    // Parameter        = String[] args
+    public static void main(String[] args) {
+
+        // Ausgabe von "Hello World!"
+        System.out.println("Hello World!");
+    }
+}
+\end{lstlisting}
+\newpage
+\section{Kontrollstrukturen}
+\addcontentsline{toc}{section}{Kontrollstrukturen}
+\subsection*{Was sind Kontrollstrukturen?}
+\addcontentsline{toc}{subsection}{Was sind Kontrollstrukturen?}
+Kontrollstrukturen sind Anweisungen, die den Programmfluss steuern.\\
+Sie entscheiden, welche Anweisungen ausgefuehrt werden und welche nicht.
+\subsection*{If/Else-Statement}
+\addcontentsline{toc}{subsection}{If/Else-Statement}
+Das If-Else-Statement ist eine Kontrollstruktur, die eine Bedingung ueberprueft. \vspace{0.5cm} \\
+Sie benutzen Boolsche Ausdruecke, um zu entscheiden, ob ein Codeblock ausgefuehrt wird oder nicht. \vspace{0.5cm} \\
+Zur besseren Lesbarkeit kann man auch eine Variable des Datentyps \textbf{boolean} benutzen und in If/Else benutzen.
+\begin{lstlisting}[language=java,title=Beispiel:If-/Else-Statement]
+// If-Else-Statement
+if(12 > 10) {
+    System.out.println("Wahr");
+} else {
+    System.out.println("Falsch");
+}
+\end{lstlisting}
+\begin{lstlisting}[language=java,title=Beispiel:If-/Else-Boolean]
+// If-Else-Statement mit boolean
+boolean istWahr = 12 > 10;
+if(istWahr) {
+    System.out.println("Wahr");
+} else {
+    System.out.println("Falsch");
+}
+\end{lstlisting}
+\newpage
+\subsection*{Ternary Operator}
+\addcontentsline{toc}{subsection}{Ternary Operator}
+Der Ternary Operator ist eine Kurzschreibweise fuer If-Else-Statements. \\
+Er besteht aus einer Bedingung, einem Fragezeichen und zwei Moeglichkeiten. \vspace{0.5cm}\\
+\textbf{Syntax:} \texttt{Bedingung ? Ausdruck1 : Ausdruck2} \\
+\textbf{Beispiel:}
+\begin{lstlisting}[language=java,title=Beispiel:Ternary-Operator]
+int a = 10;
+int b = 12;
+
+// Groessere Zahl wird in groesser gespeichert
+int groesser = a > b ? a : b;
+
+system.out.println(groesser); // Ausgabe: 12
+\end{lstlisting}
+\textbf{Verglichen mit dem If Else saehe das so aus}: \vspace{0.5cm} 
+\begin{lstlisting}[language=java,title=Beispiel:Ternary-Operator]
+int a = 10;
+int b = 12;
+int groesser;
+
+if(a > b) {
+    groesser = a;
+} else {
+    groesser = b;
+}
+
+system.out.println(groesser); // Ausgabe: 12
+\end{lstlisting}
+\newpage
+\subsection*{Switch-Case}
+\addcontentsline{toc}{subsection}{Switch-Case}
+Der Switch-Case ist eine Kontrollstruktur, die eine Variable auf verschiedene Werte ueberprueft.
+Es wird ein Ausdruck ausgewertet und mit den verschiedenen Cases verglichen. \vspace{0.5cm} \\
+\textbf{Syntax:}
+\begin{lstlisting}[language=java,title=Syntax:Switch-Case]
+switch(Ausdruck) {
+    case Wert1:
+        // Code
+        break;
+    case Wert2:
+        // Code
+        break;
+    default:
+        // Code
+}
+\end{lstlisting}
+\textbf{Außerdem} gibt es noch die "Lambda Like" schreibweise, die ab Java 12 verfuegbar ist. \vspace{0.5cm} \\
+\textbf{Syntax:}
+\begin{lstlisting}[language=java,title=Syntax:Switch-Case]
+switch(Ausdruck) {
+    case Wert1 -> // Code;
+    case Wert2 -> // Code;
+    default ->    // Code;
+}
+\end{lstlisting}
+\newpage
+\subsection*{Schleifen}
+\addcontentsline{toc}{subsection}{Schleifen}
+Schleifen sind Kontrollstrukturen, die eine Anweisung wiederholt ausfuehren. \\
+Es gibt drei Arten von Schleifen in Java:
+\begin{enumerate}
+    \item \textbf{For-Schleife}
+    \subsubitem \& \textbf{'for-feach' Schleife}
+    \item \textbf{While-Schleife}
+    \item \textbf{Do-While-Schleife}
+\end{enumerate}
+\subsection*{Beispiele für Schleifen}
+\addcontentsline{toc}{subsection}{Beispiele für Schleifen}
+\begin{lstlisting}[language=java,title=Beispiel:For-Schleife]
+// For-Schleife
+for(int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+\end{lstlisting}
+
+\textbf{Beispiel: für Datenmengen (For-Each-Schleife)}
+\begin{lstlisting}[language=java,title=Beispiel:For-Each-Schleife]
+// For-Each-Schleife
+int[] zahlen = {1, 2, 3, 4, 5};
+for(int zahl : zahlen) {
+    System.out.println(zahl);
+}
+\end{lstlisting}
+\newpage
+\subsubsection*{While-Schleife}
+\addcontentsline{toc}{subsubsection}{While-Schleife}
+
+\begin{lstlisting}[language=java,title=Beispiel:While-Schleife]
+// While-Schleife
+int i = 0;
+while(i < 5) {
+    System.out.println(i);
+    i++;
+}
+\end{lstlisting}
+
+\subsubsection*{Do-While-Schleife}
+\addcontentsline{toc}{subsubsection}{Do-While-Schleife}
+
+\begin{lstlisting}[language=java,title=Beispiel:Do-While-Schleife]
+// Do-While-Schleife
+int i = 0;
+do {
+    System.out.println(i);
+    i++;
+} while(i < 5);
+\end{lstlisting}
+\newpage
+\section{Zurueck zu Methoden}
+\addcontentsline{toc}{section}{Zurueck zu Methoden}
+Methoden werden genutzt, um Code zu strukturieren und wiederzuverwenden. \\
+Sie koennen Parameter entgegennehmen und einen Rueckgabewert haben. \vspace{0.5cm} \\
+\textbf{Beispiele für Methoden, anhand von einem Additionsverfahren}
+\begin{lstlisting}[language=java,title=Beispiel: Addition]
+// Methode add
+public static int add(int a, int b) {
+    i = a;
+    s = b;
+    while(i > 0) {
+        s++; // s = s + 1
+        i--; // i = i - 1
+    }
+    return s;
+}
+\end{lstlisting}
+Diese Methode, könnte nun innerhalb der Main-Methode oder anderer Methoden aufgerufen werden. und Wir muessen nicht jedes Mal den Code neu schreiben.
+\begin{lstlisting}[language=java,title=Beispiel: Aufruf der Methode]
+public class Main {
+
+    public static void main(String[] args) {
+    
+        int summe = add(5, 3);
+        System.out.println(summe); // Ausgabe: 8
+    }
+}
+\end{lstlisting}
+\newpage
+\section*{Aufgabenstellungen}
+\addcontentsline{toc}{section}{Aufgabenstellungen}
+\subsection*{Aufgabe 1}
+\addcontentsline{toc}{subsection}{Aufgabe 1}
+Ihre Aufgabe ist es, eine Klasse zu erstellen die verschiedene Methoden beinhaltet. folgende Vorgaben müssen Sie erfüllen:
+\begin{enumerate}[label=$\alph*)$]
+    \item Klassenname: \textbf{Kalkulator}
+    \item Methoden:
+    \begin{enumerate}
+        \item Addition
+        \subsubitem Addiert Zwei Zahlen und gibt das Ergebnis zurueck.
+        \item Subtraktion
+        \subsubitem Subtrahiert Zwei Zahlen und gibt das Ergebnis zurueck.
+        \item Multiplikation
+        \subsubitem Multipliziert Zwei Zahlen und gibt das Ergebnis zurueck.
+        \item Division
+        \subsubitem Dividiert Zwei Zahlen und gibt das Ergebnis zurueck.
+        \item getHappyBirthdayString (param: String name)
+        \subsubitem Gibt einen Glueckwunsch für <name> zurueck.
+        \item printStuff (param: <beliebiger Datentyp> stuff)
+        \subsubitem Gibt verschiedene Werte aus.
+    \end{enumerate} 
+    \item Testen Sie, jede Methode mit folgenden Werten
+    \begin{enumerate}
+        \item Addition(5, 3)
+        \item Subtraktion(5, 3)
+        \item Multiplikation(5, 3)
+        \item Division(5, 3)
+        \item getHappyBirthdayString(''Max'')
+    \end{enumerate}
+    und geben Sie die Ergebnisse aus.
+    \item Testen Sie die Methode printStuff mit verschiedenen Werten, indem Sie, die Ergebnisse der Zahlenrückgaben als String übergeben. Benutzen Sie hierfür Google und die Java-Dokumentation.
+\end{enumerate}
+\newpage
+\subsection*{Erweiterung der Aufgabe 1}
+\addcontentsline{toc}{subsection}{Erweiterung der Aufgabe 1}
+Erweitern Sie die Klasse kalkulator folgendermaßen:\\
+Importieren Sie die Klasse Scanner und lesen Sie zwei Zahlen von der Konsole ein. Testen Sie ihre Methoden und die Ausgabe mit diesen Werten.
+\begin{lstlisting}[language=java,title=Import einer Klasse]
+// Import
+import java.util.Scanner;
+
+// Scanner-Objekt erstellen
+Scanner <Variablenname> = new Scanner(System.in);
+
+// Einlesen von Werten
+int a = <Variablenname>.nextInt();
+String b = <Variablenname>.nextLine();
+\end{lstlisting}
+\subsubsection*{Noch eine Erweiterung}
+\addcontentsline{toc}{subsubsection}{Noch eine Erweiterung}
+Erweitern Sie die Klasse Kalkulator um eine Methode, die den Benutzer nach einer Zahl fragt und diese zurückgibt sollte Sie, größer als eine 10 sein, und keine ',' oder Buchstaben enthalten.\\
+Benutzen zur Recherche google, und schauen Sie nach Begriffen wie:
+\begin{enumerate}
+    \item \texttt{Java Scanner}
+    \item \texttt{Java String Methoden (Matches)}
+    \item \texttt{Cast Operatoren}
+    \item \texttt{Regular Expression}
+\end{enumerate}
+\end{document}
