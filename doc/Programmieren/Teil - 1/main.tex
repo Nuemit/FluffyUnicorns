@@ -17,6 +17,9 @@
 
 \onehalfspacing % 1.5-facher Zeilenabstand
 
+% % % Farbdefinitionen % % %
+\newcommand{\sepa}{\text{\color[HTML]{030303}|}}
+
 % Code-Block-Einstellungen
 
 \lstset{
@@ -62,8 +65,6 @@
     {$Git: FluffyUnicorns$}
 }
 \date{\today}
-
-\newpage
 \begin{document}
 \maketitle
 \begin{titlepage}
@@ -219,12 +220,131 @@ Operatoren sind Symbole, die auf Variablen und Werte angewendet werden, um eine 
 % % % Unterkapitel 1 % % %
 \textbf{\color[HTML]{a61e27}DISCLAIMER:} \\
 \textit{\color[HTML]{a61e27}Die Operatoren, die aufgezählt werden, sind die Operatoren, die wir auch in dem Modul ''Programmieren-1'' benutzen.}
-\begin{enumerate}[label=-]
-    \item \textbf{Vergleichsoperatoren}
-    \item \textbf{Logische Operatoren}
-    \item \textbf{Bitweise Operatoren}
-    \item \textbf{Zuweisungsoperatoren}
-    \item \textbf{Inkrement- \& Dekrementoperatoren}
+\begin{table}[h!]
+    \resizebox{0.8\textwidth}{!}{%
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Arten}                              & \textbf{Beispiele}        \\ \hline
+        \textbf{Arithmetische Operatoren}           & \texttt{\color[HTML]{9726ab} + \sepa \ - \sepa \ * \sepa \ / \sepa \ \% }     \\ \hline
+        \textbf{Zuweisungsoperatoren}               & \texttt{\color[HTML]{9726ab} = }                                              \\ \hline
+        \textbf{Vergleichsoperatoren}               & \texttt{\color[HTML]{9726ab} < \sepa \ > \sepa  \ >= \sepa  \ <=    }         \\ \hline
+        \textbf{Logische Operatoren}                & \texttt{\color[HTML]{9726ab} ! \ \sepa \ \&\& \sepa \ || \sepa \ \^ }         \\ \hline
+        \textbf{Bitweise Operatoren}                & \texttt{\color[HTML]{9726ab} | \ \sepa \ \& \sepa \^ \sepa \texttildelow}     \\ \hline
+        \textbf{Inkrement \& Dekrement Operatoren}  & \texttt{\color[HTML]{9726ab} ++ \sepa --} \\ \hline
+    \end{tabular}
+    }
+\end{table}
+\subsubsection*{Weitere Operatoren}
+\addcontentsline{toc}{subsubsection}{Weitere Operatoren}
+\begin{enumerate}[label=$\alph*)$]
+    \item \textit{instanceof} 
+    \item Cast Operator: \text{( )}
+    \item Klammern \text{( )}
+    \item Indexierung von Arrays \text{[ ]}
+    \item Ternary Operator \text{? :}
 \end{enumerate}
+\newpage
+\subsection*{Post \& Präfix Operator}
+\addcontentsline{toc}{subsection}{Post \& Präfix Operator}
+Es gibt \textbf{Zwei} Arten von Inkrement \& Dekrement Operatoren, die auch die Arbeitsweise, des Operators, beeinflussen. \vspace{0.5cm} \\
+\textit{Es sei I eine Variable von Typ \textbf{Int}.}
+\begin{enumerate}[label=$\alph*)$]
+    \item \textbf{Präfix Notation:}
+    \begin{enumerate}[label=]
+        \item \texttt{++i} - Variable wird \textbf{Sofort} Inkrementiert
+        \item \texttt{--i} - Variable wird \textbf{Sofort} Dekrementiert
+    \end{enumerate}
+    und dann der \textbf{neue} Wert für die Variable verwendet.
+    \item \textbf{Postfix Notation:}  
+    \begin{enumerate}[label=]
+        \item \texttt{i++} - Variable wird erst \textbf{nach} der Verwendung Inkrementiert
+        \item \texttt{i--} - Variable wird erst \textbf{nach} der Verwendung Dekrementiert
+    \end{enumerate}
+    und der \textbf{alte} Wert für die Variable verwendet.
+\end{enumerate}
+\newpage
+\section*{Kontrollstrukturen}
+\addcontentsline{toc}{section}{Kontrollstrukturen}
+Kontrollstrukturen dienen dazu, den Ablauf eines Algorithmus zu steuern. Sie geben an, ob bzw. wie oft Schritte (Anweisungen, statements) ausgeführt werden sollen. \vspace{0.5cm} \\
+\textbf{Begriffserklärung:}
+\begin{enumerate}[label=]
+    \item \textbf{Algorithmus:}
+    \begin{enumerate}[label=]
+        \item ist eine allgemeingültige Verarbeitungsvorschrift.
+    \end{enumerate}
+    \item \textbf{Programm:}
+    \begin{enumerate}[label=]
+        \item Ist ein Algorithmus in einer Programmiersprache (+ Dokumentation).
+        \item Das Programm wird als \textbf{Statisch} bezeichnet.
+    \end{enumerate}
+    \item \textbf{Prozess:}
+    \begin{enumerate}[label=]
+        \item ist die Ausführung eines Programms.
+        \item Der Prozess wird als \textbf{Dynamisch} bezeichnet.
+    \end{enumerate}
+\end{enumerate}
+\textbf{Kontrollstrukturen} sind selbst \underline{Anweisungen}!
+\subsection*{Merkmale Prozesse}
+\addcontentsline{toc}{subsection}{Merkmale Prozesse}
+Prozesse können entweder ''endlich'' oder ''unendlich'' sein. \vspace{0.5cm} \\
+\textbf{Endliche Prozesse:} Terminieren.\\
+\textbf{Unendliche Prozesse:} Terminieren nicht.
+\subsection*{Anweisungen}
+\addcontentsline{toc}{subsection}{Anweisungen}
+Anweisungen sind üblicherweise Zuweisungen o. Kontrollanweisungen (Schleifen und bedingte Anweisungen) und Prozeduren (Funktions und Methodenaufrufe). \vspace{0.5cm} \\
+\textbf{Im Gegensatz zu Ausdrücken} haben Anweisungen \underline{\textbf{nicht immer}} einen Wert.
+\begin{enumerate}
+    \item Anweisungen können Ausdrücke sein, z.B. Zuweisungen, Methodenaufrufe oder Inkrement/Dekrement operatoren.
+    \item Vergleiche oder Arithmetische Ausdrücke sind syntaktisch keine vollständigen Anweisungen.
+\end{enumerate}
+\newpage
+\subsection*{Prinzip der Lokalität und Linearität}
+\addcontentsline{toc}{subsection}{Prinzip der Lokalität und Linearität}
+\begin{enumerate}
+    \item \textbf{Lokalität:}
+    \begin{enumerate}
+        \item Der Kontrollfluss verlässt den durch den \textbf{Eingang} und \textbf{Ausgang} definierten Kontrollbereich, nicht!
+    \end{enumerate}
+    \item \textbf{Linearität:}
+    \begin{enumerate}
+        \item Betrachtet man, jede Kontrollstruktur \textit{makroskopisch}, dann verläuft der Kontrollfluss \textbf{linear} durch einen Algorithmus, \textit{d.h.} streng Sequentiell von Anfang bis Ende.
+    \end{enumerate}
+\end{enumerate}
+Jede Kontrollstruktur für sich gesehen bildet eine Einheit und werden Schrittweise ausgeführt. Aus einer Kontrollstruktur \textbf{kann nicht herausgesprungen} werden. Sie folgen dem Prinzip der Lokalität. Zudem lassen sich Kontrollstrukturen selbst, beliebig kombinieren und verschachteln, daher werden Sie zur beschreibung von Komplexen Algorithmen verwendet.
+\newpage
+\section*{Ein Beispiel}
+\addcontentsline{toc}{section}{Ein Beispiel}
+\begin{lstlisting}[language=java,title=Beispiel]
+// Importieren einer Klasse
+import java.util.Scanner;
 
+/** public = Von oeffentlich aufrufbar. 
+    class  = definiert eine Klasse. */
+public class Main {
+
+    // Globale, nur innerhalb dieser Klasse veraenderbare Variable
+    // private = nur innerhalb dieser Klasse verwendbar.
+    // Variable wird Deklariert & Initialisiert!
+    private int globInt = 42;
+
+    // Erstellung der Main Methode, der Einstieg ins Programm.
+    public static void main(String[] args){
+        // Initialisierung eines Scanners.
+        Scanner scIn = new Scanner(System.in);
+
+        // Lokale Variable wird deklariert.
+        String rawInput;
+
+        // Lokale Variable wird initialisiert.
+        // scIn.next() liest input aus der Konsole ein.
+        rawInput = scIn.next();
+
+        // Benutzen einer Anweisung/ Kontrollstruktur
+        // Wenn rawInput Nicht "" ist, dann fuehre aus.
+        if (rawInput != "") {
+            System.out.println(rawInput + globInt);
+        }
+    }
+}
+\end{lstlisting}
 \end{document}
