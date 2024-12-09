@@ -1,0 +1,84 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[a4paper, left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage{listings}
+\usepackage{tcolorbox} % Für farbige Boxen
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{courier}
+
+\pagenumbering{Roman}
+\setcounter{page}{0}
+
+\onehalfspacing % 1.5-facher Zeilenabstand
+
+% % % Farbdefinitionen % % %
+\newcommand{\sepa}{\text{\color[HTML]{030303}|}}
+
+% Code-Block-Einstellungen
+
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,       % Schriftart und -größe
+    keywordstyle=\color{blue},       % Schlüsselwörter (z.B. def, while) in Blau
+    stringstyle=\color{purple},      
+    commentstyle=\color{gray},       % Kommentare in Grau
+    numberstyle=\tiny\color{gray},   % Zeilennummern
+    numbers=left,                    % Zeilennummern links anzeigen
+    stepnumber=1,                    % Jede Zeile nummerieren
+    showstringspaces=false,          % Leerzeichen in Strings ignorieren
+    frame=single,                    % Rahmen um den Code
+    rulecolor=\color{black},         % Rahmenfarbe
+    backgroundcolor=\color{lightgray!20}, % Hintergrund leicht grau
+    tabsize=4                        % Tab-Breite
+}
+
+\lstset{
+    language=Java,
+    basicstyle=\ttfamily\small\color{white}, % Schriftart, -größe und Farbekeywordstyle=\color{cyan},
+    stringstyle=\color[HTML]{ffb10a},
+    commentstyle=\color[HTML]{2cc227},
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color[HTML]{55abed},
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    frame=double,
+    rulecolor=\color{white},
+    backgroundcolor=\color[HTML]{1e211f},
+    tabsize=4,
+    morekeywords={@Override, public, private, protected, static, final, class, interface, extends, implements, new, return, if, else, for, while, do, switch, case, break, continue, default, try, catch, finally, throw, throws, import, package, this, super, void, int, long, double, float, boolean, char, byte, short, null, true, false}
+}
+
+\title{
+    \textit{Programmieren 2} \\
+        \large Zusammenfassung
+}
+\author{
+    Tim Nätebus \\
+    \large \textit{Git: FluffyUnicorns}
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section*{Vorwort}
+\addcontentsline{toc}{section}{Vorwort}
+Dieses Dokument, soll zur Hilfestellung in dem Modul ''Programmieren-1'' dienen.
+In Programmieren-1, benutzen wird Java mit der OpenJDK-23.
+Dieses Dokument, ist in Kapitel unterteilt, die sich mit den Fortgeschrittenen Themen von Java aus Programmieren-1 beschäftigen. 
+Als Wissensbasis ist das Dokument aus \\''\texttt{/doc/Programmieren/Teil-1/main.pdf}'' zu empfehlen.
+\section*{Kapitel 1: Objekte und Klassen}
+\addcontentsline{toc}{section}{Kapitel 1: Objekte und Klassen}
+\subsection*{Klassen}
+\addcontentsline{toc}{subsection}{Klassen}
+
+\end{document}
