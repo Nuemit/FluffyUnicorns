@@ -28,24 +28,21 @@ public class GeschwindigkeitAuto {
         int cleanInputInt;
         String rwInputString;
 
-        do { 
-            rwInputString = scInput.nextLine();
-
-            // "\\d*" means looking for only numbers.
-            if (!rwInputString.isEmpty() && rwInputString.matches("\\d*")) {
-
+        do {
+            rwInputString = "";
+            cleanInputInt = 0;
+            rwInputString = scInput.next();
+            if(!rwInputString.isEmpty() && rwInputString.matches("\\d*")){
                 cleanInputInt = Integer.parseInt(rwInputString);
-
-                if ((cleanInputInt < 301) && (cleanInputInt > 0)) {
+                if((cleanInputInt < 301) && (cleanInputInt > 0)){
                     geschwindigkeiten[index] = cleanInputInt;
                     index = index + 1;
                 }
             }
-
-        } while (
-            !"-1".equals(rwInputString) && 
-            (index < geschwindigkeiten.length)
-        );
+        } while (!"-1".equals(rwInputString) && (index < geschwindigkeiten.length) );
+        if (geschwindigkeiten[0] == 0) {
+            geschwindigkeiten[0] = 1;
+        }
     }
 
     /**
@@ -55,10 +52,15 @@ public class GeschwindigkeitAuto {
      *
      * @param geschwindigkeiten Array containing the speed values to be printed
      */
-    public static void ausgeben(int geschwindigkeiten[]){
-        for (int i = 0; geschwindigkeiten[i] != 0; i++) {
-            System.out.println("Geschwindigkeit: " + geschwindigkeiten[i] + " km/h");
+    public static void ausgeben (int geschwindigkeiten[]){
+        if (geschwindigkeiten == null || geschwindigkeiten.length == 0){
+            System.out.println("null");
+        } else if (!(geschwindigkeiten.length == 0) && geschwindigkeiten != null) {
+            for (int i = 0; (i < geschwindigkeiten.length); i++){
+                if(!(geschwindigkeiten[i] == 0)) {
+                    System.out.println("Geschwindigkeit: "+geschwindigkeiten[i]+" km/h");
+                } 
+            }   
         }
     }
-
 }
