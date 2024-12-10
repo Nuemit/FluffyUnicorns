@@ -7,7 +7,7 @@
 \usepackage{ngerman}
 \usepackage{listings}
 \usepackage{tcolorbox} % Für farbige Boxen
-\usepackage{hyperref}
+\usepackage[bookmarksopen,colorlinks,plainpages=false,urlcolor=blue,unicode]{hyperref}
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage{courier}
@@ -68,7 +68,10 @@
 \begin{document}
 \maketitle
 \newpage
+{\hypersetup{linkcolor=black}
+% or \hypersetup{linkcolor=black}, if the colorlinks=true option of hyperref is used
 \tableofcontents
+}
 \newpage
 \section*{Vorwort}
 \addcontentsline{toc}{section}{Vorwort}
@@ -76,9 +79,39 @@ Dieses Dokument, soll zur Hilfestellung in dem Modul ''Programmieren-1'' dienen.
 In Programmieren-1, benutzen wird Java mit der OpenJDK-23.
 Dieses Dokument, ist in Kapitel unterteilt, die sich mit den Fortgeschrittenen Themen von Java aus Programmieren-1 beschäftigen. 
 Als Wissensbasis ist das Dokument aus \\''\texttt{/doc/Programmieren/Teil-1/main.pdf}'' zu empfehlen.
-\section*{Kapitel 1: Objekte und Klassen}
+\section*{Schleifen \& Verzweigungen}
+\addcontentsline{toc}{section}{Schleifen \& Verzweigungen}
+\subsection*{Schleifen}
+\addcontentsline{toc}{subsection}{Schleifen}
+% Schleifenkapitel %
+
+\subsubsection*{For-Schleife}
+\addcontentsline{toc}{subsubsection}{For-Schleife}
+% For-Schleife %
+\subsubsection*{For-Each-Schleife}
+\addcontentsline{toc}{subsubsection}{For-Each-Schleife}
+% For-Each-Schleife %
+
+\subsubsection*{while-Schleife}
+\addcontentsline{toc}{subsubsection}{while-Schleife}
+% while-Schleife %
+
+\subsubsection*{do-while-Schleife}
+\addcontentsline{toc}{subsubsection}{do-while-Schleife}
+% do-while-Schleife %
+
+
+\newpage
+\section*{Objekte und Klassen}
 \addcontentsline{toc}{section}{Kapitel 1: Objekte und Klassen}
 \subsection*{Klassen}
 \addcontentsline{toc}{subsection}{Klassen}
+% Klassenkapitel %
+\subsection*{Objekte}
+\addcontentsline{toc}{subsection}{Objekte}
+% Objektekapitel %
+\subsection*{Spezialität - Access by Reference}
+\addcontentsline{toc}{subsection}{Spezialität - Access by Reference}
+% Spezialfall Access by Reference %
 
 \end{document}
