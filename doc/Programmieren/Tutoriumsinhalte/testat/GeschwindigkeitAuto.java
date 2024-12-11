@@ -14,6 +14,8 @@ public class GeschwindigkeitAuto {
 
     /**
      * Reads speed values from user input and stores them in an array.
+     * The input process do not start if:
+     * - [int] geschwindigkeiten[] is null
      * The input process continues until either:
      * - The user enters "-1" to terminate input
      * - The array is full
@@ -26,23 +28,29 @@ public class GeschwindigkeitAuto {
         Scanner scInput = new Scanner(System.in);
         int index = 0;
         int cleanInputInt;
+        boolean valid = (
+            geschwindigkeiten == null ||
+            geschwindigkeiten.length == 0
+        );
         String rwInputString;
-
-        do {
-            rwInputString = "";
-            cleanInputInt = 0;
-            rwInputString = scInput.next();
-            if(!rwInputString.isEmpty() && rwInputString.matches("\\d*")){
-                cleanInputInt = Integer.parseInt(rwInputString);
-                if((cleanInputInt < 301) && (cleanInputInt > 0)){
-                    geschwindigkeiten[index] = cleanInputInt;
-                    index = index + 1;
+        if (valid) {
+            do {
+                rwInputString = "";
+                cleanInputInt = 0;
+                rwInputString = scInput.next();
+                if(!rwInputString.isEmpty() && rwInputString.matches("\\d*")){
+                    cleanInputInt = Integer.parseInt(rwInputString);
+                    if((cleanInputInt < 301) && (cleanInputInt > 0)){
+                        geschwindigkeiten[index] = cleanInputInt;
+                        index = index + 1;
+                    }
                 }
+            } while (!"-1".equals(rwInputString) && (index < geschwindigkeiten.length) );
+            if (geschwindigkeiten[0] == 0) {
+                    geschwindigkeiten[0] = 1;
             }
-        } while (!"-1".equals(rwInputString) && (index < geschwindigkeiten.length) );
-        if (geschwindigkeiten[0] == 0) {
-            geschwindigkeiten[0] = 1;
         }
+        
     }
 
     /**
@@ -55,7 +63,7 @@ public class GeschwindigkeitAuto {
     public static void ausgeben (int geschwindigkeiten[]){
         if (geschwindigkeiten == null || geschwindigkeiten.length == 0){
             System.out.println("null");
-        } else if (!(geschwindigkeiten.length == 0) && geschwindigkeiten != null) {
+        } else {
             for (int i = 0; (i < geschwindigkeiten.length); i++){
                 if(!(geschwindigkeiten[i] == 0)) {
                     System.out.println("Geschwindigkeit: "+geschwindigkeiten[i]+" km/h");
