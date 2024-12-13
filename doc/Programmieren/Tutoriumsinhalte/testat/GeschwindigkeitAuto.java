@@ -27,16 +27,18 @@ public class GeschwindigkeitAuto {
     public static void einlesenGeschwindigkeit(int geschwindigkeiten[]) {
         Scanner scInput = new Scanner(System.in);
         int index = 0;
+        @SuppressWarnings("unused")
         int cleanInputInt;
         boolean valid = (
             geschwindigkeiten == null ||
             geschwindigkeiten.length == 0
         );
+        @SuppressWarnings("unused")
         String rwInputString;
         if (valid) {
             do {
-                rwInputString = "";
-                cleanInputInt = 0;
+                rwInputString = ""; // reset var.
+                cleanInputInt = 0; // Best case: var is never used.
                 rwInputString = scInput.next();
                 if(!rwInputString.isEmpty() && rwInputString.matches("\\d*")){
                     cleanInputInt = Integer.parseInt(rwInputString);
