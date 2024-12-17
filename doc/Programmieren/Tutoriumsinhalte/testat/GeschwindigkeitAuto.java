@@ -48,9 +48,6 @@ public class GeschwindigkeitAuto {
                     }
                 }
             } while (!"-1".equals(rwInputString) && (index < geschwindigkeiten.length) );
-            if (geschwindigkeiten[0] == 0) {
-                    geschwindigkeiten[0] = 1;
-            }
         }
         
     }
