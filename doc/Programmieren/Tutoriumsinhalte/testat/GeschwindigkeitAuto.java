@@ -1,5 +1,3 @@
-package testat;
-
 import java.util.Scanner;
 
 /**
@@ -49,7 +47,7 @@ public class GeschwindigkeitAuto {
                 }
             } while (!"-1".equals(rwInputString) && (index < geschwindigkeiten.length) );
         }
-        
+        scInput.close();
     }
 
     /**

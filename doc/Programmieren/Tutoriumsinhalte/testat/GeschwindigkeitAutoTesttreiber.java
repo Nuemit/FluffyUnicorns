@@ -1,4 +1,3 @@
-package testat;
 
 /**
  * The {@code GeschwindigkeitAutoTesttreiber} class is a test driver for the {@code GeschwindigkeitAuto} class.
